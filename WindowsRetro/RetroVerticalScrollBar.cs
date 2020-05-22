@@ -93,13 +93,12 @@ namespace WindowsRetro
             ScrollBarRenderer.DrawRightHorizontalTrack(e.Graphics, ClientRectangle, ScrollBarState.Normal);
 
             // Draw the thumb and thumb grip in the current state.
-            ScrollBarRenderer.DrawVerticalThumb(e.Graphics,thumbRectangle, thumbState);
-            ScrollBarRenderer.DrawVerticalThumbGrip(e.Graphics, thumbRectangle, thumbState);
-            
+            RetroScrollBarRenderer.DrawSystemButton(e.Graphics, thumbRectangle, SystemButtonType.Base, ButtonState.Normal);
 
             // Draw the scroll arrows in the current state.
-            ScrollBarRenderer.DrawArrowButton(e.Graphics, upArrowRectangle, upButtonState);
-            ScrollBarRenderer.DrawArrowButton(e.Graphics, downArrowRectangle, downButtonState);
+            RetroScrollBarRenderer.DrawSystemButton(e.Graphics, upArrowRectangle, SystemButtonType.UpArrowScrollBar, ButtonState.Normal);
+            RetroScrollBarRenderer.DrawSystemButton(e.Graphics, downArrowRectangle, SystemButtonType.DownArrowScrollBar, ButtonState.Normal);
+
 
             // Draw a highlighted rectangle in the left side of the scroll 
             // bar track if the user has clicked between the left arrow 

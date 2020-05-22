@@ -49,7 +49,7 @@
             // 
             // retroButton8
             // 
-            this.retroButton8.Location = new System.Drawing.Point(135, 154);
+            this.retroButton8.Location = new System.Drawing.Point(91, 142);
             this.retroButton8.Name = "retroButton8";
             this.retroButton8.Size = new System.Drawing.Size(30, 30);
             this.retroButton8.Symbol = WindowsRetro.SystemSymbol.Up;
@@ -59,7 +59,7 @@
             // 
             // retroButton9
             // 
-            this.retroButton9.Location = new System.Drawing.Point(99, 154);
+            this.retroButton9.Location = new System.Drawing.Point(55, 142);
             this.retroButton9.Name = "retroButton9";
             this.retroButton9.Size = new System.Drawing.Size(30, 30);
             this.retroButton9.Symbol = WindowsRetro.SystemSymbol.Up;
@@ -69,7 +69,7 @@
             // 
             // retroButton10
             // 
-            this.retroButton10.Location = new System.Drawing.Point(63, 154);
+            this.retroButton10.Location = new System.Drawing.Point(19, 142);
             this.retroButton10.Name = "retroButton10";
             this.retroButton10.Size = new System.Drawing.Size(30, 30);
             this.retroButton10.Symbol = WindowsRetro.SystemSymbol.Up;
@@ -79,7 +79,7 @@
             // 
             // retroButton5
             // 
-            this.retroButton5.Location = new System.Drawing.Point(135, 118);
+            this.retroButton5.Location = new System.Drawing.Point(91, 106);
             this.retroButton5.Name = "retroButton5";
             this.retroButton5.Size = new System.Drawing.Size(30, 30);
             this.retroButton5.Symbol = WindowsRetro.SystemSymbol.Up;
@@ -89,7 +89,7 @@
             // 
             // retroButton6
             // 
-            this.retroButton6.Location = new System.Drawing.Point(99, 118);
+            this.retroButton6.Location = new System.Drawing.Point(55, 106);
             this.retroButton6.Name = "retroButton6";
             this.retroButton6.Size = new System.Drawing.Size(30, 30);
             this.retroButton6.Symbol = WindowsRetro.SystemSymbol.Up;
@@ -99,7 +99,7 @@
             // 
             // retroButton7
             // 
-            this.retroButton7.Location = new System.Drawing.Point(63, 118);
+            this.retroButton7.Location = new System.Drawing.Point(19, 106);
             this.retroButton7.Name = "retroButton7";
             this.retroButton7.Size = new System.Drawing.Size(30, 30);
             this.retroButton7.Symbol = WindowsRetro.SystemSymbol.Up;
@@ -109,7 +109,7 @@
             // 
             // retroButton4
             // 
-            this.retroButton4.Location = new System.Drawing.Point(135, 82);
+            this.retroButton4.Location = new System.Drawing.Point(91, 70);
             this.retroButton4.Name = "retroButton4";
             this.retroButton4.Size = new System.Drawing.Size(30, 30);
             this.retroButton4.Symbol = WindowsRetro.SystemSymbol.Up;
@@ -119,7 +119,7 @@
             // 
             // retroButton3
             // 
-            this.retroButton3.Location = new System.Drawing.Point(99, 82);
+            this.retroButton3.Location = new System.Drawing.Point(55, 70);
             this.retroButton3.Name = "retroButton3";
             this.retroButton3.Size = new System.Drawing.Size(30, 30);
             this.retroButton3.Symbol = WindowsRetro.SystemSymbol.Up;
@@ -129,7 +129,7 @@
             // 
             // retroButton2
             // 
-            this.retroButton2.Location = new System.Drawing.Point(63, 82);
+            this.retroButton2.Location = new System.Drawing.Point(19, 70);
             this.retroButton2.Name = "retroButton2";
             this.retroButton2.Size = new System.Drawing.Size(30, 30);
             this.retroButton2.Symbol = WindowsRetro.SystemSymbol.Up;
@@ -139,7 +139,7 @@
             // 
             // retroButton1
             // 
-            this.retroButton1.Location = new System.Drawing.Point(65, 41);
+            this.retroButton1.Location = new System.Drawing.Point(19, 29);
             this.retroButton1.Name = "retroButton1";
             this.retroButton1.Size = new System.Drawing.Size(100, 35);
             this.retroButton1.Symbol = WindowsRetro.SystemSymbol.Up;
@@ -152,7 +152,7 @@
             // 
             this.retroCheck1.Checked = false;
             this.retroCheck1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.retroCheck1.Location = new System.Drawing.Point(171, 82);
+            this.retroCheck1.Location = new System.Drawing.Point(127, 70);
             this.retroCheck1.Name = "retroCheck1";
             this.retroCheck1.Size = new System.Drawing.Size(225, 23);
             this.retroCheck1.TabIndex = 12;
@@ -161,7 +161,7 @@
             // retroTextBox1
             // 
             this.retroTextBox1.BorderColor = System.Drawing.Color.Black;
-            this.retroTextBox1.Location = new System.Drawing.Point(171, 51);
+            this.retroTextBox1.Location = new System.Drawing.Point(127, 39);
             this.retroTextBox1.Multiline = true;
             this.retroTextBox1.Name = "retroTextBox1";
             this.retroTextBox1.Size = new System.Drawing.Size(194, 25);
@@ -170,7 +170,7 @@
             // retroOption1
             // 
             this.retroOption1.Checked = false;
-            this.retroOption1.Location = new System.Drawing.Point(171, 111);
+            this.retroOption1.Location = new System.Drawing.Point(127, 99);
             this.retroOption1.Name = "retroOption1";
             this.retroOption1.Size = new System.Drawing.Size(137, 23);
             this.retroOption1.TabIndex = 14;
@@ -179,7 +179,7 @@
             // retroOption2
             // 
             this.retroOption2.Checked = false;
-            this.retroOption2.Location = new System.Drawing.Point(171, 136);
+            this.retroOption2.Location = new System.Drawing.Point(127, 124);
             this.retroOption2.Name = "retroOption2";
             this.retroOption2.Size = new System.Drawing.Size(137, 16);
             this.retroOption2.TabIndex = 15;
@@ -188,7 +188,7 @@
             // retroOption3
             // 
             this.retroOption3.Checked = false;
-            this.retroOption3.Location = new System.Drawing.Point(171, 164);
+            this.retroOption3.Location = new System.Drawing.Point(127, 152);
             this.retroOption3.Name = "retroOption3";
             this.retroOption3.Size = new System.Drawing.Size(137, 16);
             this.retroOption3.TabIndex = 18;
@@ -196,7 +196,7 @@
             // 
             // customScrollBar1
             // 
-            this.customScrollBar1.Location = new System.Drawing.Point(181, 186);
+            this.customScrollBar1.Location = new System.Drawing.Point(137, 174);
             this.customScrollBar1.Name = "customScrollBar1";
             this.customScrollBar1.Size = new System.Drawing.Size(200, 20);
             this.customScrollBar1.TabIndex = 19;
@@ -204,7 +204,7 @@
             // 
             // retroVerticalScrollBar1
             // 
-            this.retroVerticalScrollBar1.Location = new System.Drawing.Point(402, 41);
+            this.retroVerticalScrollBar1.Location = new System.Drawing.Point(392, 29);
             this.retroVerticalScrollBar1.Name = "retroVerticalScrollBar1";
             this.retroVerticalScrollBar1.Size = new System.Drawing.Size(20, 200);
             this.retroVerticalScrollBar1.TabIndex = 20;
@@ -214,7 +214,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(457, 256);
+            this.ClientSize = new System.Drawing.Size(510, 304);
             this.Controls.Add(this.retroVerticalScrollBar1);
             this.Controls.Add(this.customScrollBar1);
             this.Controls.Add(this.retroOption3);

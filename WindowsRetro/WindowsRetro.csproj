@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Line.cs" />
     <Compile Include="SystemButtonType.cs" />
     <Compile Include="CustomScrollBar.cs">
       <SubType>Component</SubType>
@@ -65,7 +66,7 @@
     <Compile Include="RetroVerticalScrollBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ScrollBarRenderer.cs" />
+    <Compile Include="RetroScrollBarRenderer.cs" />
     <Compile Include="SystemSymbol.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

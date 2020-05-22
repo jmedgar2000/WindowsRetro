@@ -29,6 +29,7 @@ namespace WindowsRetro
         private Brush brush3 = new SolidBrush(Color.FromArgb(135,136,143));
         private Brush brush4 = new SolidBrush(Color.FromArgb(192, 199, 200));
         private Pen blackPen = new Pen(Color.Black,1);
+        private Pen whitePen = new Pen(Color.White);
         private Pen pen1 = new Pen(Color.FromArgb(135, 136, 143), 1);
         private Pen pen2 = new Pen(Color.FromArgb(135, 136, 143), 1);
         
@@ -214,8 +215,11 @@ namespace WindowsRetro
                 if (symbol== SystemSymbol.Down || symbol == SystemSymbol.Up )
                 {
 
-                    g.FillRectangle(whiteBrush, new Rectangle(1, 1, X - 3, 2));
-                    g.FillRectangle(whiteBrush, new Rectangle(1, 1, 2, Y - 3)); //todo: Podria pintarse una linea
+                    //g.FillRectangle(whiteBrush, new Rectangle(1, 1, X - 3, 2));
+                    //g.FillRectangle(whiteBrush, new Rectangle(1, 1, 2, Y - 3)); 
+                    g.DrawLine(whitePen, 1, 1, X - 2, 1);
+                    g.DrawLine(whitePen, 1, 1, 1 , Y-2);
+
                     g.DrawLine(pen1, 2, Y - 3, X - 2, Y - 3);
                     g.DrawLine(pen1, 1, Y - 2, X - 2, Y - 2);
                     g.DrawLine(pen1, X - 3, 2, X - 3, Y - 2);

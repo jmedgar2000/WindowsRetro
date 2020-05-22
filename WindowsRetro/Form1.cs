@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,15 @@ namespace WindowsRetro
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
+           // // Create rectangle for clipping region.
+           // Rectangle clipRect = new Rectangle(100, 100, 40, 40);
 
+           // //Set clipping region of graphics to rectangle.
+           //e.Graphics.SetClip(clipRect, CombineMode.Replace);
+
+            // Fill rectangle to demonstrate clip region.
+            //e.Graphics.PixelOffsetMode= PixelOffsetMode.
+            //e.Graphics.FillRectangle(new SolidBrush(Color.Black), 0, 0, 20, 20);
         }
 
         private void Form1_Load(object sender, EventArgs e)
