@@ -12,18 +12,10 @@ namespace System.Windows.Forms
     public static class RetroScrollBarRenderer
     {
         private static Brush whiteBrush = new SolidBrush(Color.White);
+        private static Brush brush4 = new SolidBrush(Color.FromArgb(192, 199, 200));
         private static Pen whitePen = new Pen(Color.White,1);
         private static Pen blackPen = new Pen(Color.Black, 1);
-        private static Brush brush4 = new SolidBrush(Color.FromArgb(192, 199, 200));
         private static Pen pen1 = new Pen(Color.FromArgb(135, 136, 143), 1);
-        private static Point point1= new Point(0,0);
-        private static Point point2 = new Point(0, 0);
-        //private GetAbsoluteBounds(Rectangle rectangle)
-        //{
-
-        //}
-
-        
 
         public static void DrawOffsetLine(this Graphics g, Point offsetPoint,Pen pen, int x1, int y1, int x2, int y2)
         {
@@ -42,10 +34,7 @@ namespace System.Windows.Forms
 
         public static void DrawSystemButton(Graphics g, Rectangle bounds, SystemButtonType type,ButtonState buttonState)
         {
-            //TODO: Aqui debe dibujarse el borde
-            //TODO: Porque hay dos rectangulos blanco cuando debe haber solo una linea
             g.DrawOffsetRectangle(bounds.Location,blackPen, 0, 0, bounds.Width-1, bounds.Height-1);
-           
 
             switch (type)
             {
@@ -56,7 +45,6 @@ namespace System.Windows.Forms
                     switch (buttonState)
                     {
                         case ButtonState.Normal:
-                            //g.FillRectangle(whiteBrush, new Rectangle(0, 0, 10, 10));
                             g.DrawOffsetLine(bounds.Location, whitePen, 1, 1, bounds.Width - 2, 1);
                             g.DrawOffsetLine(bounds.Location, whitePen, 1, 1, 1, bounds.Height - 2);
                             g.DrawOffsetLine(bounds.Location, pen1, 2, bounds.Height - 3, bounds.Width - 2, bounds.Height - 3);
@@ -64,14 +52,6 @@ namespace System.Windows.Forms
                             g.DrawOffsetLine(bounds.Location, pen1, bounds.Width - 3, 2, bounds.Width - 3, bounds.Height - 2);
                             g.DrawOffsetLine(bounds.Location, pen1, bounds.Width - 2, 1, bounds.Width - 2, bounds.Height - 2);
                             g.FillOffsetRectangle(bounds.Location, brush4, 2, 2, bounds.Width - 5, bounds.Height - 5);
-
-                            //g.DrawLine(whitePen, bounds.X + 1, bounds.Y + 1, bounds.Width - 2, 1); //Linea horizontal
-                            //g.DrawLine(whitePen, bounds.X + 1, bounds.Y + 1, 1, bounds.Height - 2); //Linea vertical
-                            //g.DrawLine(pen1, bounds.X + 2, bounds.Y + bounds.Height - 3, bounds.Width - 2, bounds.Height - 3);
-                            //g.DrawLine(pen1, bounds.X + 1, bounds.Y + bounds.Height - 2, bounds.Width - 2, bounds.Height - 2);
-                            //g.DrawLine(pen1, bounds.X + bounds.Y + bounds.Width - 3, 2, bounds.Width - 3, bounds.Height - 2);
-                            //g.DrawLine(pen1, bounds.X + bounds.Y + bounds.Width - 2, 1, bounds.Width - 2, bounds.Height - 2);
-                            //g.FillRectangle(brush4, new Rectangle(bounds.X + 2, bounds.Y + 2, bounds.Width - 5, bounds.Height - 5));
                             break;
 
                         case ButtonState.Pushed:
@@ -84,14 +64,11 @@ namespace System.Windows.Forms
                     if (type!= SystemButtonType.Base) DrawSymbol(g, bounds, type);
 
                     break;
-
-     
             }
         }
 
         public static void DrawSymbol(Graphics g, Rectangle bounds, SystemButtonType type)
         {
-            //var point=new PointF(0F,0F);
             Bitmap bitmap=null;
 
             switch (type)
@@ -119,14 +96,11 @@ namespace System.Windows.Forms
             }
 
             g.DrawOffsetImage(bounds.Location,bitmap, (bounds.Width - bitmap.Width) / 2, (bounds.Height - bitmap.Height) / 2);
-            //g.DrawImage(bitmap, (g.ClipBounds.Width - bitmap.Width) / 2, (g.ClipBounds.Height - bitmap.Height) / 2);
-
         }
 
         public static void DrawOffsetImage(this Graphics g, Point offsetPoint,Image image, int x, int y)
         {
             g.DrawImage(image, offsetPoint.X + x, offsetPoint.Y + y);
-            //g.DrawLine(pen, offsetPoint.X + x1, offsetPoint.Y + y1, offsetPoint.X + x2, offsetPoint.Y + y2);
         }
 
         //public static void DrawSystemButton(Graphics g, Rectangle bounds, SystemButtonType buttonType,ButtonState buttonState)
@@ -181,8 +155,6 @@ namespace System.Windows.Forms
                 case ScrollBarArrowButtonState.DownNormal:
                     g.DrawImage(WindowsRetro.Properties.Resources.up_arrow_1, new PointF((g.ClipBounds.Width - 7) / 2, (g.ClipBounds.Height - 4) / 2));
                     break;
-
-
             }
 
             if (state== ScrollBarArrowButtonState.UpNormal)
